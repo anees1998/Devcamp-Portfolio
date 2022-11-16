@@ -1,0 +1,17 @@
+<%= form_for(@portfolio_item) do |form| %>
+  
+    <div>
+      <%= form.label :Title, style: "display: block" %>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div>
+      <%= form.label :Body, style: "display: block" %>
+      <%= form.text_area :body %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+  

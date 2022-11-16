@@ -16,23 +16,23 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-# 10.times do |blog|
-#     Blog.create!(
-#         Title: "blogNo #{blog}",
-#         Body: "random body"
-#     )
-# end
+10.times do |blog|
+    Blog.create!(
+        Title: "blogNo #{blog}",
+        Body: "random body"
+    )
+end
 
-# puts "5 blog posts created"
+puts "5 blog posts created"
 
-#   10.times do |skill|
-#     Skill.create!(
-#       title: "Rails #{skill}",
-#       percent_utilized: 15
-#     )
-#   end
+  10.times do |skill|
+    Skill.create!(
+      title: "Rails #{skill}",
+      percent_utilized: 15
+    )
+  end
 
-#   puts "5 skills created"
+  puts "5 skills created"
 
   9.times do |portfolio_item|
     Portfolio.create!(
