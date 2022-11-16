@@ -16,7 +16,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 
-5.times do |blog|
+10.times do |blog|
     Blog.create!(
         Title: "blogNo #{blog}",
         Body: "random body"
@@ -25,7 +25,7 @@ end
 
 puts "5 blog posts created"
 
-  5.times do |skill|
+  10.times do |skill|
     Skill.create!(
       title: "Rails #{skill}",
       percent_utilized: 15
