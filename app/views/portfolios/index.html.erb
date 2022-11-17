@@ -2,5 +2,7 @@
 <% @portfolio_items.each do |p_item| %>
     <h3> <%= p_item.title %> </h3>
     <p> <%= p_item.body %> </p>
+    <%= link_to "edit" ,edit_portfolio_path(p_item.id) %>
+
      <%= image_tag p_item.main_image unless p_item.main_image.nil? %> 
 <%end%>
