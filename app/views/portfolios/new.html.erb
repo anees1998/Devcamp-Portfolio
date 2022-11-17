@@ -1,0 +1,22 @@
+
+<h1> new items </h1>
+
+<%= form_for(@portfolio_item) do |form| %>
+  
+    <div>
+      <%= form.label :Title, style: "display: block" %>
+      <%= form.text_field :title %>
+    </div>
+  
+    <div>
+      <%= form.label :Body, style: "display: block" %>
+      <%= form.text_area :body %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+    <h5><%=link_to "home" ,portfolios_path%></h5>
+    
+  <% end %>
+  
