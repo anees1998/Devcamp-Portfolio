@@ -3,6 +3,7 @@
 
 <% @portfolio_items.each do |p_item| %>
     <h3> <%= link_to p_item.title, portfolio_path(p_item.id) %> </h3>
-    <%= link_to "edit" ,edit_portfolio_path(p_item.id) %>
+    <%= link_to "Edit" ,edit_portfolio_path(p_item.id) %>
+    <%= link_to "Delete" , portfolio_path(p_item.id) , data:{turbo_method: :delete, turbo_confirm:'Are you sure?'} %>
 
 <%end%>
