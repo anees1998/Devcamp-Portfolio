@@ -1,5 +1,13 @@
 <%= image_tag @portfolio_item.main_image  %> 
 
 <h1> <%= @portfolio_item.title %> </h1>
+<%= image_tag @portfolio_item.thumb_image   %> 
+
+<h5> <%= @portfolio_item.subtitle%>  </h5>
 <p> <%= @portfolio_item.body %> </p>
+
+<% @portfolio_item.technologies.each do |p_t|%>
+    <h4><%= p_t.name %> </h4>
+<% end %>
+
 <h5><%=link_to "home" ,portfolios_path%></h5>
