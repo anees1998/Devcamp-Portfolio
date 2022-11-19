@@ -1,0 +1,13 @@
+<h1> Only angular item</h1>
+<% @angular.each do |a_item|%>
+    
+    <h3> <%= link_to a_item.title, portfolio_show_path(a_item.id) %> </h3>
+    <%= image_tag a_item.thumb_image  %> 
+
+    <h5> <%= a_item.subtitle%>  </h5>
+    <p> <%= a_item.body%>  </p>
+    <%= link_to "Edit" ,edit_portfolio_path(a_item.id) %>
+    <%= image_tag a_item.main_image  %> 
+
+
+<% end %>
