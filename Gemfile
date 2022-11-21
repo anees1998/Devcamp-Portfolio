@@ -66,3 +66,4 @@ end
 
 gem 'friendly_id', '~> 5.4.2'
 gem 'hirb', '~> 0.7.3'
+gem 'devise', '~> 4.8', '>= 4.8.1'
